@@ -33,6 +33,9 @@ header{
     background-color: black;
     animation: back 30s;
 }
+main{
+    height: 800vh;
+}
 .backgraund{
     position: absolute;
     height: 100vh;
@@ -56,6 +59,9 @@ header{
     text-shadow: 5px 5px 0px rgb(0, 0, 0);
 }
 .text p{
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 350px;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: 'Work Sans', sans-serif;
 }
