@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -9,12 +8,38 @@
 }
 body{
     overflow-x:hidden;
+    height: 200vh;
 }
 .conteiner{
     width: 100%;
     height: 100vh;
 }
-header{
+
+  /* ini: Preloader */
+ 
+  #preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#0a0a0a; 
+    z-index:999; 
+}
+.inner h3{
+    color: white;
+    text-align: center;
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+/* Menu */
+
+.cabeçalho{
     z-index: 100;
     display: flex;
     position: absolute;
@@ -24,19 +49,36 @@ header{
     align-items: center;
     justify-content: space-around;
     gap: 50px;
-    background-color: rgb(255, 255, 255);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.514);
 }
-header img{
-    height: 128px;
-    width: 128px;
+.menu{
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    display: flex;
+    gap: 3rem;
+
 }
-#back{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    animation: back 30s;
+
+.menu a{
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: solid 2px rgb(20, 20, 20);
+    padding: 2px;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    transition: transform 1s;
 }
+.menu a:hover{
+    transform: scale(111%);
+    color: white;
+}
+.status p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+/* Banner e texto do banner */
 .backgraund{
     position: absolute;
     height: 100vh;
@@ -44,11 +86,14 @@ header img{
     background-color: black;
     overflow-y:hidden;
     overflow-x:hidden;
+    border-bottom: solid white 1px;
+}
+.d-block{
+    height: 100vh;
 }
 .text{
     font-family: 'VT323', monospace;
-    font-size: 5rem;
-    z-index: 999;
+    z-index: 100;
     position: absolute;
     top: 38%;
     width: 100%;
@@ -56,33 +101,17 @@ header img{
     text-align: center;
     animation: back_text 3s;
 }
-
+.text h1{
+    font-size: 5rem;
+}
 .text p{
-    margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Work Sans', sans-serif;
 }
 #on{
     color: green;
 }
-nav{
-    color: rgb(255, 0, 0);
-    padding: 10px;
-    display: flex;
-    gap: 3rem;
-
-}
-nav a{
-    border-bottom: solid 2px rgb(20, 20, 20);
-    padding: 2px;
-    font-size: 1.1rem;
-    color: black;
-    transition: transform 1s;
-}
-nav a:hover{
-    transform: scale(111%);
-}
-.text button{
+.text a{
     font-size: 2rem;
     background-color: rgba(240, 248, 255, 0);
     color: white;
@@ -92,14 +121,70 @@ nav a:hover{
     border-radius: 15px;
     transition: transform 1s;
 }
-.text button:hover{
+.text a:hover{
     transform: scale(111%);
+    color: white;
 }
 .backgraund img{
     width: 100%;
     opacity: .6;
 }
-
+.sobre{
+    top: 100vh;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-bottom: solid white 1px;
+}
+.sobre h2{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.conteiner_sobre{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    font-family: 'Courier Prime', monospace;
+}
+.card_sobre{
+    width: 400px;
+}
+.comoJogar{
+    top: 100vh;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    text-align: center;
+}
+.comoJogar h2{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.comojogar_botoes{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.comojogar_botoes a{
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    border-radius: 10px;
+    transform: 2s;
+}
+.comojogar_botoes a:hover{
+    opacity: .6;
+    color: black;
+}
+.comojogar_botoes img{
+    height: 32px;
+    width: 32px;
+}
 @keyframes back{
     0%{
         transform: scale(150%);
@@ -113,4 +198,22 @@ nav a:hover{
     }100%{
         right: 0;
     }
+}
+
+.btnTop{
+    position: fixed;
+    right: 1rem;
+    border-radius: 50%;
+    padding: .3rem;
+    cursor: pointer;
+    bottom: 2rem;
+    transition: all 1s;
+    z-index: 170;
+}
+.btnTop:hover{
+    opacity: .5;
+    transform: scale(1.2);
+}
+.btnTop img{
+    width: 64px;
 }
