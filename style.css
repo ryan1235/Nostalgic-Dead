@@ -23,7 +23,7 @@ body{
     left:0;
     right:0;
     bottom:0;
-    background-color:#0a0a0a; 
+    background-image: linear-gradient(to top, #000000, #181717, #282628, #38373a, #49494d);
     z-index:999; 
 }
 .inner h3{
@@ -44,13 +44,13 @@ body{
     display: flex;
     position: absolute;
     box-shadow: 5px black;
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.329) solid;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     gap: 50px;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(0, 0, 0, 0.267);
 }
 .menu{
     color: rgb(255, 0, 0);
@@ -62,7 +62,7 @@ body{
 
 .menu a{
     font-family: 'Open Sans', sans-serif;
-    border-bottom: solid 2px rgb(20, 20, 20);
+    border-bottom: solid 2px rgba(20, 20, 20, 0.466);
     padding: 2px;
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
@@ -116,7 +116,7 @@ body{
     background-color: rgba(240, 248, 255, 0);
     color: white;
     padding: 5px;
-    border: solid black 2px;
+    border: solid rgba(0, 0, 0, 0.24) 2px;
     cursor: pointer;
     border-radius: 15px;
     transition: transform 1s;
@@ -133,7 +133,7 @@ body{
     top: 100vh;
     height: 100vh;
     position: relative;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #000000, #181717, #282628, #38373a, #49494d);
     text-align: center;
     color: white;
     border-bottom: solid white 1px;
@@ -155,7 +155,7 @@ body{
     top: 100vh;
     height: 100vh;
     position: relative;
-    background-color: black;
+    background-image: linear-gradient(to top, #000000, #181717, #282628, #38373a, #49494d);
     text-align: center;
 }
 .comoJogar h2{
