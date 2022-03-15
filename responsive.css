@@ -1,0 +1,46 @@
+@media (max-width: 800px){
+    .text h1{
+        font-size: 3rem;
+    }
+    .menu_pc{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .sobre{
+        height: auto;
+    }
+    .comoJogar iframe{
+        width: 90%;
+    }
+    .status p{
+        font-size: 1rem;
+    }
+    #hamburguer{
+        display: block;
+    }
+}
+@media (max-width: 450px){
+    .text h1{
+        font-size: 3rem;
+    }
+    .menu_pc{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .sobre{
+        height: auto;
+    }
+    .comoJogar iframe{
+        width: 90%;
+    }
+    .status p{
+        font-size: .7rem;
+    }
+    #hamburguer{
+        display: block;
+    }
+}

@@ -9,6 +9,7 @@
 body{
     overflow-x:hidden;
     height: 200vh;
+    background-image: url(https://jmd.im/wp-content/uploads/2017/06/blackix_thumbnail.jpg);
 }
 .conteiner{
     width: 100%;
@@ -39,7 +40,7 @@ body{
 
 /* Menu */
 
-.cabeçalho{
+.menu_pc{
     z-index: 100;
     display: flex;
     position: absolute;
@@ -52,6 +53,7 @@ body{
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.267);
 }
+
 .menu{
     color: rgb(255, 0, 0);
     padding: 10px;
@@ -72,21 +74,71 @@ body{
     transform: scale(111%);
     color: white;
 }
+.menu_mobile{
+    display: none;
+}
+.ative{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 200;
+    background-color: #000000;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    animation: menu 1s;
+    transition: all 1s;
+
+}
+#hamburguer{
+    position: fixed;
+    z-index: 200;
+    top: 5px;
+    left: 5px;
+    display: block;
+}
+.nav_mobile{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.nav_mobile a{
+    border-bottom: solid 2px rgba(20, 20, 20, 0.466);
+    padding: 2px;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+}
 .status p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     margin: 0;
     text-align: center;
+    color: white;
+}
+@keyframes menu {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }100%{
+        width: 40%;
+        opacity: 1;
+    }
 }
 /* Banner e texto do banner */
 .backgraund{
     position: absolute;
     height: 100vh;
     width: 100%;
-    background-color: black;
     overflow-y:hidden;
+    background-color: #000000;
     overflow-x:hidden;
-    border-bottom: solid white 1px;
+    border-bottom: solid rgba(255, 255, 255, 0.438) 1px;
 }
 .d-block{
     height: 100vh;
@@ -133,10 +185,11 @@ body{
     top: 100vh;
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(to bottom, #000000, #181717, #282628, #38373a, #49494d);
     text-align: center;
+    background-repeat: no-repeat;
+    background-position-y: 50rem left;
     color: white;
-    border-bottom: solid white 1px;
+    border-bottom: solid rgba(255, 255, 255, 0.404) 1px;
 }
 .sobre h2{
     padding-top: 50px;
@@ -145,6 +198,7 @@ body{
 .conteiner_sobre{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 1rem;
     font-family: 'Courier Prime', monospace;
 }
@@ -155,7 +209,6 @@ body{
     top: 100vh;
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(to top, #000000, #181717, #282628, #38373a, #49494d);
     text-align: center;
 }
 .comoJogar h2{
@@ -166,6 +219,7 @@ body{
 .comojogar_botoes{
     margin-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }

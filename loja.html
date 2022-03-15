@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -22,34 +21,17 @@
         </div>
     </div>
     <div class="conteiner">
-        <img onclick="btn1()" id="hamburguer" src="https://img.icons8.com/ios/50/ffffff/list--v1.png"/>
-        <header>
-            <div class="menu_pc">
-                <nav class="menu">
-                    <a href="#">Inicio</a>
-                    <a href="#">Loja</a>
-                    <a href="">Régras</a>
-                    <a id="suave1" href="#sobre">Sobre</a>
-                    <a target="_blank" href="https://discord.gg/NSjnpbRYmt">discord</a>
-                </nav>
-                <div class="status">
-                    <p id="online3"></p>
-                    <p id="online4"></p>
-                </div>
-            </div>
-            <div id="menu_mobile" class="menu_mobile">
-                <nav class="nav_mobile">
-                    <a onclick="btn2()" href="#">Inicio</a>
-                    <a onclick="btn2()" href="#">Loja</a>
-                    <a onclick="btn2()" href="">Régras</a>
-                    <a onclick="btn2()" id="suave2" href="#sobre">Sobre</a>
-                    <a onclick="btn2()" target="_blank" href="https://discord.gg/NSjnpbRYmt">discord</a>
-                </nav>
-                <div class="status">
-                    <p id="online1"></p>
-                    <p id="online2"></p>
-                </div>
-                <img onclick="btn1()" src="https://img.icons8.com/ios-glyphs/40/ffffff/cancel.png"/>
+        <header class="cabeçalho">
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Loja</a>
+                <a href="">Régras</a>
+                <a id="suave1" href="#sobre">Sobre</a>
+                <a target="_blank" href="https://discord.gg/NSjnpbRYmt">discord</a>
+            </nav>
+            <div class="status">
+                <p id="online1"></p>
+                <p id="online2"></p>
             </div>
         </header>
         <main>
@@ -87,7 +69,7 @@
                             jogadores ou copere com eles em varios eventos.</p>
                     </div>
                     <div class="card_sobre">
-                        <img src="https://img.icons8.com/fluency/100/000000/zombie.png"/>
+                        <img src="https://img.icons8.com/plasticine/100/000000/zombie.png" />
                         <h3>O Melhor servidor Crafting Dead</h3>
                         <p>Viva e reviva os melhores momentos que um mod de mine pode oferecer, aventuras e diversão que
                             não acabam, não pense duas vezes, instale agora!</p>
@@ -136,7 +118,6 @@
 </script>
 
 <script src="js/bntTop.js"></script>
-<script src="js/menu_mobile.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/preloader.js"></script>
 <script src="js/online.js"></script>
