@@ -20,6 +20,63 @@
     #hamburguer{
         display: block;
     }
+    .logo_img{
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+    .logo_img img{
+        width: 300px;
+        left: 0;
+    }
+    .soldado{
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+    .taifeiro{
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+    .cabo{
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+    .sargento{
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+    .marechal{
+        width: 100%;
+        margin-top: 0px;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vantagens ol{
+        padding: 0;
+    }
+    .loja_res{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    footer{
+        top: 430vh;
+    }
+    body{
+        height: 500vh;
+    }
 }
 @media (max-width: 450px){
     .text h1{
@@ -42,5 +99,58 @@
     }
     #hamburguer{
         display: block;
+    }
+    .logo_img img{
+        width: 250px;
+        left: 0;
+    }
+    .loja_card{
+        height: 300px;
+        width: 300px;
+    }
+    #imgcard{
+        height: 150px;
+    }
+    .soldado{
+        height: 130vh;
+    }
+    .taifeiro{
+        height: 130vh;
+    }
+    .cabo{
+        height: 130vh;
+    }
+    .sargento{
+        height: 130vh;
+    }
+    .marechal{
+        height: 130vh;
+    }
+    .vantagens{
+        height: 130vh;
+    }
+    .loja_res{
+        width: 100%;
+        height: 130vh;
+        overflow-x: scroll;
+    }
+    .loja_res img{
+        width: 300px;
+    }
+    footer{
+        top: 460vh;
+    }
+    body{
+        height: 530vh;
+    }
+}
+@media (max-width: 1000px){
+    .footer_loja{
+        top: 250vh;
+    }
+}
+@media (max-width: 650px){
+    .footer_loja{
+        top: 480vh;
     }
 }

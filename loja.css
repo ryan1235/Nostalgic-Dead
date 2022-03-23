@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+.coco{
+        height: 200vh;
+        background-color: #000000;
+        background-image: url(img/backgroundloja.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+.conteiner{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#moedas{
+    color: white;
+    border: 2px solid #ABB7B7;
+    padding: 2px 5px;
+}
+.main_loja{
+    color: rgb(252, 252, 252);
+    text-align: center;
+    position:absolute;
+    top: 10px;
+}
+
+.main_loja h1{
+    padding-top: 100px;
+    font-family: 'Creepster', cursive;
+    font-size: 5rem;
+}
+.main_loja p{
+    padding-top: 10px;
+}
+.main_loja button{
+    background-color: #00aaaa00;
+    border: 2px solid rgb(5, 5, 5);
+    color: rgb(0, 0, 0);
+    border-radius: 250px;
+    margin-left: 10px;
+    padding: 2px;
+    transition: 1s transform;
+}
+.main_loja button:hover{
+    transform: scale(111%);
+    opacity: .8;    
+}
+.loja{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.loja_card{
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #000000;
+    color: black;
+    background-color: rgb(255, 245, 245);
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    position: relative;
+    animation: loja_card 3s;
+}
+@keyframes loja_card{
+    0%{
+        left: -200px;
+        opacity: 0;
+    }100%{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+.loja_card h2{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+.loja_card p{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.loja_card img{
+    height: 100px;
+    width: 100px;
+}
+.botoes_loja img{
+    height: 32px;
+    width: 32px;
+}
+#tempo{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.none{
+    display: none;
+}
+.saber_conteiner{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    display: none;
+    height: auto;
+}
+.on{
+    display: block;
+}
+.of{
+    display: none;
+}
+
+.soldado{
+    position: relative;
+    background-color: white;
+    color: black;
+    margin: 1% auto;
+    display: block;
+    width: 70%;
+    border-radius: 25px;
+    box-shadow: 6px 4px black;
+    border: 2px solid;
+    animation: cards 1s;
+    text-align: center;
+}
+.soldado h2{
+    color: #050505;
+    font-size: 3rem;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}.soldado ol{
+    padding-bottom: 3rem;
+}
+#preto{
+    color: black;
+}
+.soldado strong{
+    color: #fd0000;
+}
+.taifeiro{
+    position: relative;
+    background-color: white;
+    color: black;
+    display: block;
+    margin: 1% auto;
+    width: 70%;
+    border-radius: 25px;
+    box-shadow: 6px 4px black;
+    border: 2px solid black;
+    animation: cards 1s;
+    text-align: center;
+}
+.taifeiro h2{
+    color: #2600fd;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 3rem;
+}
+.taifeiro strong{
+    color: #2600fd;
+}
+.taifeiro ol{
+    padding-bottom: 3rem;
+}
+.cabo{
+    position: relative;
+    background-color: white;
+    color: black;
+    display: block;
+    margin: 1% auto;
+    width: 70%;
+    border-radius: 25px;
+    box-shadow: 6px 4px black;
+    border: 2px solid;
+    animation: cards 1s;
+    text-align: center;
+}
+.cabo h2{
+    color: #2600fd;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 3rem;
+}
+.cabo strong{
+    color: #0fff07;
+}
+.cabo ol{
+    padding-bottom: 3rem;
+}
+.sargento{
+    position: relative;
+    background-color: white;
+    color: black;
+    overflow-x: scroll;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 6px 4px black;
+    border: 2px solid;
+    animation: cards 1s;
+    text-align: center;
+}
+.sargento h2{
+    color: #2600fd;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 3rem;
+}
+.sargento h4{
+    font-size: 1rem;
+    padding: 10px;
+    color: #ff00c8;
+}
+.sargento ol{
+    padding-bottom: 100px;
+}
+.sargento strong{
+    color: #ff00c8;
+}
+.marechal{
+    position: relative;
+    background-color: white;
+    color: black;
+    overflow-x: scroll;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 6px 4px black;
+    border: 2px solid;
+    animation: cards 1s;
+    text-align: center;
+}
+.marechal h2{
+    color: #2600fd;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 3rem;
+}
+.marechal h4{
+    font-size: 1rem;
+    padding: 10px;
+    color: #730881;
+}
+.marechal ol{
+    padding-bottom: 100px;
+}
+.marechal strong{
+    color: #730881;
+}
+#exit{
+    position: absolute;
+    right: 10px;
+    top: 3;
+    z-index: 200;
+}
+@keyframes cards{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.vantagens{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.active{
+    display: block;
+}
+.aloja{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    z-index: 200;
+    background-color: #1c1c1d3d;
+    height: 200vh;
+}
+.alojaative{
+    display: block;
+}
+.loja_res{
+    background-image: url(https://nostalgicdead.shop/img/footer-left-pic.png);
+    border: solid 4px black;
+    box-shadow: 5px 5px black;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 800px 250px;
+    color: #050505;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 100vh;
+    animation: cards 1s;
+    text-align: center;
+}
+.loja_res strong{
+    color: red;
+}
+.loja_res img{
+    width: 400px;
+    margin: 0 auto;
+}
+.btn_pagamento button{
+    background-color: #fffdfd5d;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 25px;
+    margin-left: 10px;
+    padding: 2px 5px;
+    transition: transform 1s;
+}
+.btn_pagamento button:hover{
+    transform: scale(111%);
+    border: 2px solid #2600ff;
+}
+#btn_pagamento{
+    width: 32px;
+    height: 32px;
+}
+.loja_res button{
+    padding: 0px 10px;
+}
+#exit_loja{
+    position: absolute;
+    width: 48px;
+    right: 1px;
+    z-index: 300;
+}
+.carregando{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+
+}
+.loja_res iframe{
+    z-index: 100;
+    animation: ifrem 3s;
+}
+
+@keyframes ifrem{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.pix_area{
+    margin: 0 auto;
+}
+#checkress{
+    color: red;
+}
+#paypal-button-container{
+    position: relative;
+    z-index: 300;
+}
+.background_lojapt{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    z-index: 200;
+    background-color: #1c1c1d3d;
+    height: 200vh;
+}
+.lojapt h2{
+    color: #000000;
+    padding: 5px;
+    border: black 1px solid;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 3rem;
+}
+.lojapt_soldado{
+    height: 3rem;
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+    display: none;
+    background-image: url(https://nostalgicdead.shop/img/footer-left-pic.png);
+    border: solid 4px black;
+    box-shadow: 5px 5px black;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 800px 250px;
+    color: #050505;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 100vh;
+    animation: cards 1s;
+    text-align: center;
+}
+.alojaatives{
+    display: flex;
+}
+.alojaaback{
+    display: block;
+}
+.lojapt_taifero{
+    height: 3rem;
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+    display: none;
+    background-image: url(https://nostalgicdead.shop/img/footer-left-pic.png);
+    border: solid 4px black;
+    box-shadow: 5px 5px black;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 800px 250px;
+    color: #050505;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80%;
+    height: 100vh;
+    animation: cards 1s;
+    text-align: center;
+}
+.footer_loja{
+    position: absolute;
+    top: 190vh;
+    z-index: 500;
+}

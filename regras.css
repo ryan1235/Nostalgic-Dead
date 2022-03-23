@@ -1,0 +1,37 @@
+.regras{
+    position: absolute;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    top: 80px;
+}
+.regrasgerais{
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 180px;
+}
+
+table{
+    margin: 0 auto;
+    border: 1ox white;
+}
+table, th, td {
+    border:1px solid rgb(255, 255, 255);
+    padding: 15px 0px;
+  }
+
+td{
+    width: 150px;
+}
+
+#leve{
+    color: rgb(14, 253, 14);
+}
+#medio{
+    color: orange;
+}
+#alto{
+    color: red;
+}

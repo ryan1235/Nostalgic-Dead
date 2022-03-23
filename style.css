@@ -7,9 +7,11 @@
     text-decoration: none;
 }
 body{
-    overflow-x:hidden;
-    height: 200vh;
-    background-image: url(https://jmd.im/wp-content/uploads/2017/06/blackix_thumbnail.jpg);
+    overflow-x: hidden;
+    height: 310vh;
+    background-image: url(img/backgroundloja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .conteiner{
     width: 100%;
@@ -98,7 +100,7 @@ body{
     z-index: 200;
     top: 5px;
     left: 5px;
-    display: block;
+    display: none;
 }
 .nav_mobile{
     font-family: 'Open Sans', sans-serif;
@@ -147,25 +149,41 @@ body{
     font-family: 'VT323', monospace;
     z-index: 100;
     position: absolute;
-    top: 38%;
+    top: 80%;
     width: 100%;
     color: aliceblue;
     text-align: center;
     animation: back_text 3s;
+    z-index: 400;
 }
-.text h1{
-    font-size: 5rem;
+.logo_img{
+        z-index: 200;
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        opacity: 1;
+        top: 20%;
+        left: 38%;
+        animation: LOGO 3s;
+        animation-iteration-count: infinite;
 }
-.text p{
-    font-size: 1rem;
-    font-family: 'Work Sans', sans-serif;
+.logo_img img{
+    width: 250px;
+    left: 0;
+}
+@keyframes LOGO{
+    0%{
+        transform: scale(100%);
+    }50%{
+        transform: scale(105%);
+    }
 }
 #on{
     color: green;
 }
 .text a{
-    font-size: 2rem;
-    background-color: rgba(240, 248, 255, 0);
+    font-size: 3rem;
+    background-color: rgba(240, 248, 255, 0.089);
     color: white;
     padding: 5px;
     border: solid rgba(0, 0, 0, 0.24) 2px;
@@ -179,7 +197,6 @@ body{
 }
 .backgraund img{
     width: 100%;
-    opacity: .6;
 }
 .sobre{
     top: 100vh;
@@ -189,7 +206,7 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50rem left;
     color: white;
-    border-bottom: solid rgba(255, 255, 255, 0.404) 1px;
+    border-bottom: solid rgba(0, 0, 0, 0.404) 1px;
 }
 .sobre h2{
     padding-top: 50px;
@@ -270,4 +287,18 @@ body{
 }
 .btnTop img{
     width: 64px;
+}
+footer{
+    top: 310vh;
+    position: absolute;
+    background-color: #000000da;
+    color: white;
+    width: 100%;
+    border-top: 2px solid whitesmoke;
+    display: flex;
+}
+.copyy{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
