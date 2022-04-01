@@ -3,18 +3,18 @@ let soldado = {
     id: 'S_btm',
     nome: 'Soldado',
     imagem: 'img/soldado.png',
-    preço: '15',
-    Dias: '30 Dias',
+    preço: '10',
+    Dias: '60 Dias',
     mercadopago: 'https://mpago.la/2atPRy7',
     pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
     chavepix: 'jorginho@gmail.com',
 }
 let taifeiro = {
     id: 't_btm',
-    nome: 'Taifeiro',
+    nome: 'Cabo',
     imagem: 'img/taifero.png',
-    preço: '25',
-    Dias: '40 Dias',
+    preço: '20',
+    Dias: '70 Dias',
     mercadopago: 'https://mpago.la/1L4ZmNp',
     pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
     chavepix: 'jorginho@gmail.com'
@@ -22,30 +22,40 @@ let taifeiro = {
 
 let cabo = {
     id: 'c_btm',
-    nome: 'Cabo',
+    nome: 'Sargento',
     imagem: 'img/cabo.png',
-    preço: '50',
-    Dias: '30 Dias',
+    preço: '40',
+    Dias: '80 Dias',
     mercadopago: 'https://mpago.la/1MbMUdY',
     pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
     chavepix: 'jorginho@gmail.com'
 }
 let Sargento = {
     id: 'ss_btm',
-    nome: 'Sargento',
+    nome: 'Major',
     imagem: 'img/sargento.png',
-    preço: '80',
-    Dias: '60 Dias',
+    preço: '65',
+    Dias: '120 Dias',
     mercadopago: 'https://mpago.la/1inGfd1',
     pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
     chavepix: 'jorginho@gmail.com'
 }
 let Marechal = {
     id: 'm_btm',
-    nome: 'Marechal',
+    nome: 'Governador',
     imagem: 'img/Marechal.png',
-    preço: '120',
-    Dias: '120 dias',
+    preço: '80',
+    Dias: '150 dias',
+    mercadopago: 'https://mpago.la/2ZQQrVx',
+    pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
+    chavepix: 'jorginho@gmail.com'
+}
+let Mercenario = {
+    id: 'm_btm',
+    nome: 'Mercenario',
+    imagem: 'img/Marechal.png',
+    preço: '100',
+    Dias: '180 dias',
     mercadopago: 'https://mpago.la/2ZQQrVx',
     pixImagem: 'https://www.serhsnatalgrandhotel.com//content/imgsxml/galerias/panel_galeriapage/1/qrcodeguestcontrol307.png',
     chavepix: 'jorginho@gmail.com'
@@ -61,7 +71,7 @@ let cacto = {
     chavepix: 'jorginho@gmail.com'
 }
 
-let vips = [soldado, taifeiro, cabo, Sargento, Marechal, cacto]
+let vips = [soldado, taifeiro, cabo, Sargento, Marechal, Mercenario, cacto]
 
 const loja = document.getElementById('loja')
 loja.innerHTML = ''

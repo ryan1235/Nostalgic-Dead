@@ -57,7 +57,7 @@
         </header>
         <main>
             <div class="main_loja">
-                <img src="img/loja.png" alt="loja">
+                <img id="mainloja" src="img/loja.png" alt="loja">
                 <p id="Paragrafo">É de Portugal? <button id="moedas" onclick="euro()"><img
                             src="https://img.icons8.com/doodle/32/000000/euro-pound-exchange--v1.png" />Clique
                         aqui</button></p>
@@ -80,8 +80,11 @@
                     <div id="soldado" class="">
                         <h2 id="title"><strong id="preto">SOLDADO</strong><img onclick="exit()" id="exit"
                                 src="https://img.icons8.com/ios-filled/50/fa314a/xbox-x.png" /></h2>
-                        <h3>kit vip</h3>
-                        <img src="img/soldaod.png" id="imgcard" alt="vip soldado">
+                        <h3>kits vips</h3>
+                        <h4>Kit Inicial</h4>
+                        <img src="img/Soldadocda.png" id="imgcard" alt="vip soldado">
+                        <h4>Kit Vipnub</h4>
+                        <img src="img/soldadonubcda.png" id="imgcard" alt="vip soldado">
                         <h3>Vantagens</h3>
                         <div class="vantagens">
                             <ol>
@@ -108,11 +111,14 @@
                         </div>
                     </div>
 
-                    <div id="taifeiros" class="">
-                        <h2><strong id="preto">TAIFERO</strong><img onclick="exit()" id="exit"
+                    <div id="taifeiros" class="cabo">
+                        <h2><strong id="preto">cabo</strong><img onclick="exit()" id="exit"
                                 src="https://img.icons8.com/ios-filled/50/fa314a/xbox-x.png" /></h2>
-                        <h3>kit vip</h3>
-                        <img src="img/viptaifero.png" id="imgcard" alt="vip taifeiros">
+                        <h3>kits vip</h3>
+                        <h4>kit ativação</h4>
+                        <img src="img/cabocda.png" id="imgcard" alt="vip taifeiros">
+                        <h4>Kit Vipnub</h4>
+                        <img src="img/soldadonubcda.png" id="imgcard" alt="vip soldado">
                         <h3>Vantagens</h3>
                         <div class="vantagens">
                             <ol>
@@ -367,6 +373,16 @@
                 </div>
                 </div>
             </section>
+            <section class="banner-promocionar banneron" id="banner-promocionar">
+                <div class="banner_promocao">
+                    <img src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png" id="exit-banner" onclick="banner_exit()" alt="sair">
+                    <img src="img/banner.png" alt="banner">
+                    <P>Todos os vips com desconto</P>
+                    <p>Além de dar 30 dias a mais de vip</p>
+                    <p>Corra é por <strong>tempo limitado!</strong></p>
+                    <img id="contagem" src="http://gen.sendtric.com/countdown/67wzajo4qd"/>>
+                </div>
+            </section>
         </main>
         <footer class="footer_loja">
             <div class="copyy">
@@ -400,5 +416,6 @@
 <script src="js/loja.js"></script>
 <script src="js/menuloja.js"></script>
 <script src="js/lojaeuro.js"></script>
+<script src="js/timer.js"></script>
 
 </html>

@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+
 .coco{
         height: 200vh;
         background-color: #000000;
         background-image: url(img/backgroundloja.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
 
 }
 .conteiner{
-    overflow: hidden;
     width: 100%;
     height: 100%;
+    
 }
 
 #moedas{
@@ -25,7 +27,10 @@
     position:absolute;
     top: 10px;
 }
-
+#mainloja{
+    width: 600px;
+    height: 500px;
+}
 .main_loja h1{
     padding-top: 100px;
     font-family: 'Creepster', cursive;
@@ -104,8 +109,13 @@
     z-index: 200;
     top: 0;
     width: 100%;
+    height: 100%;
     display: none;
     height: auto;
+}
+.saber_conteiner img{
+    border-radius: 15px;
+    border: 2px solid black;
 }
 .on{
     display: block;
@@ -120,7 +130,9 @@
     color: black;
     margin: 1% auto;
     display: block;
+    height: 600px;
     width: 70%;
+    overflow: auto;
     border-radius: 25px;
     box-shadow: 6px 4px black;
     border: 2px solid;
@@ -133,7 +145,13 @@
     padding: 5px;
     border: black 1px solid;
     font-family: 'Big Shoulders Stencil Display', cursive;
-}.soldado ol{
+}
+.soldado h4{
+    font-size: 1.5rem;
+    padding: 15px;
+    color: red;
+}
+.soldado ol{
     padding-bottom: 3rem;
 }
 #preto{
@@ -142,7 +160,7 @@
 .soldado strong{
     color: #fd0000;
 }
-.taifeiro{
+.cabo{
     position: relative;
     background-color: white;
     color: black;
@@ -155,17 +173,17 @@
     animation: cards 1s;
     text-align: center;
 }
-.taifeiro h2{
+.cabo h2{
     color: #2600fd;
     padding: 5px;
     border: black 1px solid;
     font-family: 'Big Shoulders Stencil Display', cursive;
     font-size: 3rem;
 }
-.taifeiro strong{
+.cabo strong{
     color: #2600fd;
 }
-.taifeiro ol{
+.cabo ol{
     padding-bottom: 3rem;
 }
 .cabo{
@@ -265,6 +283,8 @@
     right: 10px;
     top: 3;
     z-index: 200;
+    border: none;
+    cursor: pointer;
 }
 @keyframes cards{
     0%{
@@ -438,8 +458,56 @@
     animation: cards 1s;
     text-align: center;
 }
+.banner-promocionar{
+    width: 100%;
+    height: 300vh;
+    display: none;
+    color: white;
+    background-color: #00000049;
+    z-index: 500;
+    position: absolute;
+    overflow: hidden;
+}
+.banneron{
+    display: block;
+}
+.banner_promocao{
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    color: #000000;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    width: 400px;
+    top: 7%;
+    left: 35%;
+}
+.banner_promocao img{
+    height: 150px;
+}
+.banner_promocao p{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+.countdown{
+    height: 100px;
+}
+#exit-banner{
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#contagem{
+    height: 75px;
+    width: 100%;
+}
 .footer_loja{
     position: absolute;
-    top: 190vh;
-    z-index: 500;
+    top: 240vh;
+    z-index: 100;
 }

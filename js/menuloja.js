@@ -66,3 +66,7 @@ function m_btm(){
     cabos.classList.add('of')
     sargentos.classList.add('of')
 }
+const banner = document.getElementById('banner-promocionar')
+function banner_exit(){
+    banner.classList.remove('banneron') 
+}

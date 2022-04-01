@@ -1,4 +1,4 @@
-    let url = 'https://mcstatus.snowdev.com.br/api/query/v3/ntgdead.hostsquare.com.br'
+    let url = 'https://mcstatus.snowdev.com.br/api/query/v3/cdabrasil.galactcraft.com'
 
     fetch(url).then(function(response){
         response.json().then(function(data){
@@ -14,7 +14,7 @@ function statuss(dados){
 
         online1.innerHTML = `ntgdead.hostsquare.com.br`
         online2.innerHTML = `Players <strong id='on'>Online</strong> ${dados.players_online}/${dados.max_players}`
-        online3.innerHTML = `ntgdead.hostsquare.com.br`
+        online3.innerHTML = `cdabrasil.galactcraft.com`
         online4.innerHTML = `Players <strong id='on'>Online</strong> ${dados.players_online}/${dados.max_players}`
     }else{
         online.innerHTML = `Servidor <strong id='off'>Servidor offiline</strong>`
