@@ -90,9 +90,9 @@ function loja_Soldado() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${soldado.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${soldado.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${soldado.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <a target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <a target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${soldado.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${soldado.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -102,9 +102,9 @@ function loja_Cabo() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${Cabo.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${Cabo.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${Cabo.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${Cabo.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${Cabo.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -114,9 +114,9 @@ function loja_Sargento() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${Sargento.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${Sargento.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${Sargento.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${Sargento.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${Sargento.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -126,9 +126,9 @@ function loja_Governador() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${Governador.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${Governador.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${Governador.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${Governador.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${Governador.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -138,9 +138,9 @@ function loja_Major() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${Major.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${Major.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${Major.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${Major.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${Major.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -150,9 +150,9 @@ function loja_Mercenario() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar Vip ${Mercenario.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${Mercenario.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${Mercenario.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${Mercenario.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${Mercenario.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
@@ -162,9 +162,9 @@ function loja_Farm_de_Cacto() {
     aloja.classList.add('alojaative')
     aloja.innerHTML = ''
     aloja.innerHTML += `<div class="loja_res"><h2>Comprar ${cacto.nome}!<img id="exit_loja" onclick="exit_loja()" src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png"/></h2>
-    <h3>R$${cacto.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>Pagamentos-VIP</strong></p>
+    <h3>R$${cacto.preço}.00</h3><h3><strong>Atenção!</strong></h3><p>Após efetuar a compra entre no nosso <a target="_blank" href="https://discord.gg/2xAkFJPDrj">Discord</a> e envie o comprovante em <strong>suporte-ticket-cda</strong></p>
     <img id='pix_img' src="img/pagamendovip.png" alt="imagem pagamento vip"><div class="btn_pagamento">
-    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a href="">termo de compra</a></p><p id="checkress"></p></label>
+    <p><label><input id="check" type="checkbox">Aceito e concordo com as <target="_blank" href="regras.html">regras do servidor</a> e com o <a target="_blank" href="termos.html">termo de compra</a></p><p id="checkress"></p></label>
     <button onclick="${cacto.nome}_mercadopago()"><img id="btn_pagamento" src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>Mercado Pago</button>
     <button onclick="${cacto.nome}_pix()"><img id="btn_pagamento" src="https://logospng.org/download/pix/logo-pix-icone-512.png"/>pix</button>
     </div></div></div>`
