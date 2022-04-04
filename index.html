@@ -1,43 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manutenção</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background-color: black;
-            color: white;
-        }
-        .tudo{
-            text-align: center;
-            height: 100vh;
-            width: 100%;
-        }
-        .tudoconteiner{
-            position: relative;
-            top: 1rem;
-        }
-        .tudoconteiner img{
-            height: 500px;
-        }
-        .tudo p{
-            font-size: 1.3rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>CraftDeadBrasil</title>
+
+</html>
 </head>
-<body>
-    <div class="tudo">
-        <div class="tudoconteiner">
-        <h1>Voltamos em breve</h1>
-        <img src="https://c.tenor.com/EP_7uOYxyBAAAAAM/zombie-dancing-minecraft.gif" alt="banner">
-        <p>para mais informaçoes entre no nosso <a href="https://discord.com/invite/g3C7Yrk">Discord</a></p>
+
+<body touchstart="">
+    <div id="preloader">
+        <div class="inner">
+            <img src="img/zumbi.gif" alt="zumbi">
+            <h3>carregando...</h3>
+        </div>
     </div>
-</div>
+    <div class="conteiner">
+        <img onclick="btn1()" id="hamburguer" src="https://img.icons8.com/ios/50/ffffff/list--v1.png" />
+        <header>
+            <div class="menu_pc">
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="loja.html">Loja</a>
+                    <a href="">Régras</a>
+                    <a id="suave1" href="#sobre">Sobre</a>
+                    <a target="_blank" href="https://discord.gg/2xAkFJPDrj">discord</a>
+                </nav>
+                <div class="status">
+                    <p id="online3"></p>
+                    <p id="online4"></p>
+                </div>
+            </div>
+            <div id="menu_mobile" class="menu_mobile">
+                <nav class="nav_mobile">
+                    <a onclick="btn2()" href="#">Inicio</a>
+                    <a onclick="btn2()" href="loja.html">Loja</a>
+                    <a onclick="btn2()" href="">Régras</a>
+                    <a onclick="btn2()" id="suave2" href="#sobre">Sobre</a>
+                    <a onclick="btn2()" target="_blank" href="https://discord.gg/2xAkFJPDrj">discord</a>
+                </nav>
+                <div class="status">
+                    <p id="online1"></p>
+                    <p id="online2"></p>
+                </div>
+                <img onclick="btn1()" src="https://img.icons8.com/ios-glyphs/40/ffffff/cancel.png" />
+            </div>
+        </header>
+        <main>
+            <section class="main-principal">
+                <div class="backgraund">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/banner1png.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/banner2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/banner3.png" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo_img">
+                        <h1>CDA</h1>
+                        <H2><strong class="red">B</strong><strong class="blue">r</strong><strong class="gree">a</strong><strong class="red">s</strong><strong class="blue">i</strong><strong class="gree">l</strong></H2>
+                    </div>
+                    <div class="text">
+                        <a id="suave" href="#comoJogar">como jogar?</a>
+                    </div>
+                </div>
+            </section>
+            <section class="sobre" id="sobre">
+                <div class="sobre_conteiner">
+                    <h2>Sobre o Servidor</h2>
+                    <div class="conteiner_sobre">
+                        <div class="card_sobre">
+                            <img src="https://img.icons8.com/dusk/100/000000/calendar--v2.png" />
+                            <h3>Eventos toda semana</h3>
+                            <p>Eventos toda a semanada distribuindo premios e money dentro do jogo, despute contra
+                                outros
+                                jogadores ou copere com eles em varios eventos.</p>
+                        </div>
+                        <div class="card_sobre">
+                            <img src="https://img.icons8.com/fluency/100/000000/zombie.png" />
+                            <h3>O mais antigo servidor Crafting Dead</h3>
+                            <p>O mais antigo servidor de craftng dead brasileiro mais de 5 anos de experiencia e confiança</p>
+                        </div>
+                        <div class="card_sobre">
+                            <img
+                                src="https://img.icons8.com/external-bearicons-outline-color-bearicons/100/000000/external-VIP-christmas-and-new-year-bearicons-outline-color-bearicons.png" />
+                            <h3>SEJA VIP</h3>
+                            <p>com o passe VIP você começa na frente, se diverte ainda mais e ajuda o servidor a
+                                crescer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="comoJogar" class="comoJogar">
+                <h2>Como Jogar</h2>
+                <iframe width="700" height="390" src="https://www.youtube-nocookie.com/embed/RFe8q9fkfu0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="comojogar_botoes">
+                    <a target="_blank" href="https://tlauncher.org/en/"> <img src="img/cloud-arrow-down-solid.svg"
+                            alt="download"> TLauncher</a>
+                    <a target="_blank" href="https://cdn.discordapp.com/attachments/243681934255849472/958594576812236801/CDA_Mods.rar"> <img
+                            src="img/cloud-arrow-down-solid.svg" alt="download"> Mods</a>
+                    <a target="_blank" href="https://www.technicpack.net/download"> <img
+                            src="img/cloud-arrow-down-solid.svg" alt="download"> Technic Launcher Original</a>
+                    <a target="_blank" href="https://www.hackphoenix.com/technic-launcher/"> <img
+                            src="img/cloud-arrow-down-solid.svg" alt="download"> Technic Launcher Pirata</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="copyy">
+                <h3>&copy; CraftDeadBrasil 2022</h3>
+                <p>Site feito e desenvolvido por <a href="ryanluca.tec">ryanluca</a></p>
+                <div class="redesociais">
+                    <a target="_blank" href=""><img src="https://img.icons8.com/clouds/64/000000/instagram-new--v3.png"/></a>
+                    <a onclick="btn2()" target="_blank" href="https://discord.com/invite/g3C7Yrk"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png"/></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="btnTop">
+        <img src="img/back-to-top-icon-png-7.jpg" alt="botão-topo">
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<script src="js/bntTop.js"></script>
+<script src="js/menu_mobile.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/online.js"></script>
+<script src="js/scroll-suave.js"></script>
+
 </html>

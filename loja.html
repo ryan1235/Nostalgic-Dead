@@ -57,10 +57,7 @@
         </header>
         <main>
             <div class="main_loja">
-                <img id="mainloja" src="img/loja.png" alt="loja">
-                <p id="Paragrafo">É de Portugal? <button id="moedas" onclick="euro()"><img
-                            src="https://img.icons8.com/doodle/32/000000/euro-pound-exchange--v1.png" />Clique
-                        aqui</button></p>
+                <h1>Loja</h1>
                 <section id="loja" class="loja">
                     <div class="loja_card">
                         <h2>Soldado</h2>
@@ -246,154 +243,17 @@
                 <div id="aloja" class="aloja">
                     <div class="loja_res"></div>
                 </div>
-                <div class="background_lojapt" id="background_lojapt">
-                    <div class="lojapt_soldado" id="lojapt_soldado"">
-                    <img id=" exit_loja" onclick="exit_lojapt()"
-                        src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png" />
-                    <h2>vip soldado</h2>
-                    <div id="paypal-button-container"></div>
-                    <div id="smart-button-container">
-                        <div style="text-align: center;">
-                            <div id="paypal-button-container"></div>
-                        </div>
-                    </div>
-                    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL"
-                        data-sdk-integration-source="button-factory"></script>
-                    <script>
-                        function initPayPalButton() {
-                            paypal.Buttons({
-                                style: {
-                                    shape: 'pill',
-                                    color: 'blue',
-                                    layout: 'vertical',
-                                    label: 'pay',
-
-                                },
-
-                                createOrder: function (data, actions) {
-                                    return actions.order.create({
-                                        purchase_units: [{
-                                            "description": "teste",
-                                            "amount": {
-                                                "currency_code": "BRL",
-                                                "value": 15
-                                            }
-                                        }]
-                                    });
-                                },
-
-                                onApprove: function (data, actions) {
-                                    return actions.order.capture().then(function (orderData) {
-
-                                        // Full available details
-                                        console.log('Capture result', orderData, JSON.stringify(
-                                            orderData, null, 2));
-
-                                        // Show a success message within this page, e.g.
-                                        const element = document.getElementById(
-                                            'paypal-button-container');
-                                        element.innerHTML = '';
-                                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                                        // Or go to another URL:  actions.redirect('thank_you.html');
-
-                                    });
-                                },
-
-                                onError: function (err) {
-                                    console.log(err);
-                                }
-                            }).render('#paypal-button-container');
-                        }
-                        initPayPalButton();
-                    </script>
-                </div>
-
-
-                <div class="lojapt_taifero" id="lojapt_taifero"">
-                    <img id=" exit_loja" onclick="exit_lojapt()"
-                        src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png" />
-                    <h2>vip soldado</h2>
-                    <div id="paypal-button-container"></div>
-                    <div id="smart-button-container">
-                        <div style="text-align: center;">
-                            <div id="paypal-button-container"></div>
-                        </div>
-                    </div>
-                    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL"
-                        data-sdk-integration-source="button-factory"></script>
-                    <script>
-                        function initPayPalButton() {
-                            paypal.Buttons({
-                                style: {
-                                    shape: 'pill',
-                                    color: 'blue',
-                                    layout: 'vertical',
-                                    label: 'pay',
-
-                                },
-
-                                createOrder: function (data, actions) {
-                                    return actions.order.create({
-                                        purchase_units: [{
-                                            "description": "teste",
-                                            "amount": {
-                                                "currency_code": "BRL",
-                                                "value": 15
-                                            }
-                                        }]
-                                    });
-                                },
-
-                                onApprove: function (data, actions) {
-                                    return actions.order.capture().then(function (orderData) {
-
-                                        // Full available details
-                                        console.log('Capture result', orderData, JSON.stringify(
-                                            orderData, null, 2));
-
-                                        // Show a success message within this page, e.g.
-                                        const element = document.getElementById(
-                                            'paypal-button-container');
-                                        element.innerHTML = '';
-                                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                                        // Or go to another URL:  actions.redirect('thank_you.html');
-
-                                    });
-                                },
-
-                                onError: function (err) {
-                                    console.log(err);
-                                }
-                            }).render('#paypal-button-container');
-                        }
-                        initPayPalButton();
-                    </script>
-                </div>
-                </div>
-            </section>
-            <section class="banner-promocionar banneron" id="banner-promocionar">
-                <div class="banner_promocao">
-                    <img src="https://img.icons8.com/ios-glyphs/90/000000/xbox-x.png" id="exit-banner" onclick="banner_exit()" alt="sair">
-                    <img src="img/banner.png" alt="banner">
-                    <P>Todos os vips com desconto</P>
-                    <p>Além de dar 30 dias a mais de vip</p>
-                    <p>Corra é por <strong>tempo limitado!</strong></p>
-                    <img id="contagem" src="http://gen.sendtric.com/countdown/67wzajo4qd"/>>
-                </div>
             </section>
         </main>
         <footer class="footer_loja">
             <div class="copyy">
-                <img src="img/footer.png" alt="Logo craft dead">
                 <h3>&copy; CraftDeadBrasil 2022</h3>
                 <p>Site feito e desenvolvido por <a href="ryanluca.tec">ryanluca</a></p>
                 <div class="redesociais">
-                    <a target="_blank" href="https://www.instagram.com/nostalgicdead/"><img src="https://img.icons8.com/clouds/64/000000/instagram-new--v3.png"/></a>
-                    <a onclick="btn2()" target="_blank" href="https://discord.gg/NSjnpbRYmt"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png"/></a>
+                    <a target="_blank" href=""><img src="https://img.icons8.com/clouds/64/000000/instagram-new--v3.png"/></a>
+                    <a onclick="btn2()" target="_blank" href="https://discord.com/invite/g3C7Yrk"><img src="https://img.icons8.com/clouds/64/000000/discord-logo.png"/></a>
                 </div>
-            </div>
+        </div>
         </footer>
     </div>
 </body>
