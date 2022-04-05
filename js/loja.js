@@ -5,7 +5,7 @@ let soldado = {
     imagem: 'img/soldado.png',
     preço: '10',
     Dias: '60 Dias',
-    mercadopago: 'https://i.ibb.co/b7rJ32M/image.png',
+    mercadopago: 'https://mpago.la/1cnRvvg',
     pixImagem: 'img/soldadoqrcode.png',
     chavepix: '37999149104 (telefone)',
 }
